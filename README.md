@@ -12,6 +12,15 @@ pnpm dev
 bun dev
 ```
 
+## If Any Installation needed
+
+npm i lodash ---> Please refer this for lodash related error
+npm i swiper ---> Please refer this for swiper related error
+npm i date-fns ---> Please refer this for date related error
+npm i react-loader-spinner ---> Please refer this for Loader related error
+
+
+
 ## Project Localhost
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
