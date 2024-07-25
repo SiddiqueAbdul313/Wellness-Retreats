@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-:root {
-  --primary-color: #1b3252;
-}
 
 * {
   margin: 0;
@@ -12,17 +9,15 @@
   box-sizing: border-box;
   font-family: "Source Sans 3", sans-serif;
 }
-
 input::placeholder {
   color: #fff;
   font-weight: 500;
+}
+.card::-webkit-scrollbar {
+  display: none;
 }
 @media (width<641px) {
   input::placeholder {
     color: #535c69;
   }
-}
-
-.card::-webkit-scrollbar{
-  display: none;
 }

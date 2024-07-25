@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -14,23 +12,37 @@ pnpm dev
 bun dev
 ```
 
+## Project Localhost
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Presentation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+So, starting with the folder structure:
 
-## Learn More
+I have created a /Home folder in which there is a components folder including necessary components: lets break down the list of components i have used
 
-To learn more about Next.js, take a look at the following resources:
+## Root Directory
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+page.js ---> This is a Parent to render all the Child components
+globals.css ---> In this i have imports and Required/Necessary CSS only for global use case
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Components
 
-## Deploy on Vercel
+Header.js ---> This is the header component which is the top most of the layout including the name of the project
+HeroSection.js ---> This Section includes the Image, Title, Description as given in the layout
+FilterDropdown.js ---> This is a component for the FILTER functionality which is one of the main part of the project the filter functionality is working throught the API.
+SearchBar.js ---> This search bar is used to filter the cards with the TITLE
+Card.js ---> I have used the Card component and mapped them using the map function and calling the Data through the API
+SlideButton ---> I have implemented the Buttons (Previous/Next) for the PAGINATION functionality through which we can slide to the next cards list
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Extra Functionality
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+As an extra functionality i have added a Loader which loads while the data is being fetched
+When the Search Results are not found then a UI is Shown with No Results Found
+
+## Responsive Design
+
+Considering the responsive part this page is responsive for Mobile device as well as Desktop
+
+## Thank You for giving me an opportunity for this Assignment
